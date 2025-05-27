@@ -13,7 +13,7 @@ const HeroSection = () => {
           <span className="text-accent">VISION</span>
         </h1>
         <p className="text-xl md:text-2xl mb-12 animate-slide-up">
-          Capturing Moments, Creating Legends
+        Professional Production, Proven Results.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">

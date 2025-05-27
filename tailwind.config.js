@@ -37,7 +37,7 @@ export default {
         },
       },
       backgroundImage: {
-        'hero-pattern': "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.pexels.com/photos/1484794/pexels-photo-1484794.jpeg?auto=compress&cs=tinysrgb&w=1600')",
+        'hero-pattern': "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.pinimg.com/736x/7f/07/77/7f07770020ed44766d2981d45bd24f19.jpg')",
       },
     },
   },

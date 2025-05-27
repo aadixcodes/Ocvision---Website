@@ -13,17 +13,17 @@ export const navLinks: NavLink[] = [
 export const heroImages = [
   {
     id: 1,
-    imageUrl: 'https://images.pexels.com/photos/3014856/pexels-photo-3014856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    imageUrl: '/assets/images/work1.jpg',
     alt: 'Wedding photography',
   },
   {
     id: 2,
-    imageUrl: 'https://images.pexels.com/photos/2873486/pexels-photo-2873486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    imageUrl: '/assets/images/work4.jpg',
     alt: 'Film production',
   },
   {
     id: 3,
-    imageUrl: 'https://images.pexels.com/photos/3062541/pexels-photo-3062541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    imageUrl: '/assets/images/work2.jpg',
     alt: 'Portrait session',
   },
 ];
@@ -31,71 +31,71 @@ export const heroImages = [
 export const aboutImages = [
   {
     id: 1,
-    imageUrl: 'https://images.pexels.com/photos/3379942/pexels-photo-3379942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    alt: 'Behind the scenes',
+    imageUrl: '/assets/images/about1.png',
+    alt: 'Behind the scene',
   },
   {
     id: 2,
-    imageUrl: 'https://images.pexels.com/photos/1644888/pexels-photo-1644888.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    alt: 'Team working',
+    imageUrl: '/assets/images/about2.png',
+    alt: 'Behind the scene',
   },
 ];
 
 export const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
-    title: 'Urban Wedding',
-    category: 'Wedding',
-    imageUrl: 'https://images.pexels.com/photos/1244627/pexels-photo-1244627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'Sneakers Shoot',
+    category: 'Footwear',
+    imageUrl: '/assets/images/work1.jpg',
     isLandscape: true,
   },
   {
     id: 2,
-    title: 'Nature Landscapes',
-    category: 'Landscape',
-    imageUrl: 'https://images.pexels.com/photos/1612461/pexels-photo-1612461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'Compact Powder Spill',
+    category: 'Cosmetics',
+    imageUrl: '/assets/images/work2.jpg',
     isLandscape: true,
   },
   {
     id: 3,
-    title: 'Corporate Event',
-    category: 'Event',
-    imageUrl: 'https://images.pexels.com/photos/2399097/pexels-photo-2399097.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'Professional Camera Close-Up',
+    category: 'Photography Gear',
+    imageUrl: '/assets/images/work3.png',
     isLandscape: true,
   },
   {
     id: 4,
-    title: 'Product Showcase',
-    category: 'Commercial',
-    imageUrl: 'https://images.pexels.com/photos/1667071/pexels-photo-1667071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'Monochrome Street Sneakers',
+    category: 'Footwear',
+    imageUrl: '/assets/images/work4.jpg',
     isLandscape: true,
   },
   {
     id: 5,
-    title: 'Fashion Portfolio',
-    category: 'Fashion',
-    imageUrl: 'https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'Urban Streetwear Sneakers',
+    category: 'Footwear',
+    imageUrl: '/assets/images/work5.jpg',
     isLandscape: true,
   },
   {
     id: 6,
-    title: 'Travel Series',
-    category: 'Travel',
-    imageUrl: 'https://images.pexels.com/photos/1252500/pexels-photo-1252500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'Grey Hiking Boots',
+    category: 'Footwear',
+    imageUrl: '/assets/images/work6.jpg',
     isLandscape: true,
   },
   {
     id: 7,
-    title: 'Architectural Study',
-    category: 'Architecture',
-    imageUrl: 'https://images.pexels.com/photos/1427578/pexels-photo-1427578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'Compact Powder Collection',
+    category: 'Cosmetics',
+    imageUrl: '/assets/images/work7.jpg',
     isLandscape: true,
   },
   {
     id: 8,
-    title: 'Portrait Series',
-    category: 'Portrait',
-    imageUrl: 'https://images.pexels.com/photos/2080736/pexels-photo-2080736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: ' Classic Red and Black Sneakers',
+    category: 'Footwear',
+    imageUrl: '/assets/images/work8.jpg',
     isLandscape: true,
   },
 ];
@@ -216,12 +216,12 @@ export const servicesOffered = [
 export const contactImages = [
   {
     id: 1,
-    imageUrl: 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    imageUrl: '/assets/images/contactus.jpg',
     alt: 'Studio space',
   },
   {
     id: 2,
-    imageUrl: 'https://images.pexels.com/photos/3205568/pexels-photo-3205568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    alt: 'Team meeting',
+    imageUrl: '/assets/images/work3.png',
+    alt: 'Camera',
   },
 ];
