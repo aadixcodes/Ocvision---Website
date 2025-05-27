@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
@@ -7,6 +8,20 @@ import VideoSection from './components/VideoSection';
 import AudioSection from './components/AudioSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
+import OurWork from './pages/OurWork';
+
+function Home() {
+  return (
+    <>
+      <HeroSection />
+      <AboutSection />
+      <PhotographySection />
+      <VideoSection />
+      <AudioSection />
+      <ContactSection />
+    </>
+  );
+}
 
 function App() {
   useEffect(() => {
@@ -34,16 +49,16 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-dark text-white font-montserrat">
-      <Navbar />
-      <HeroSection />
-      <AboutSection />
-      <PhotographySection />
-      <VideoSection />
-      <AudioSection />
-      <ContactSection />
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-dark text-white font-montserrat">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/our-work" element={<OurWork />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

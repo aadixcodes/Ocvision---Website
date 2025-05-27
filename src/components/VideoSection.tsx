@@ -23,11 +23,11 @@ const VideoSection: React.FC = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 animate-fade-in">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 animate-fade-in">
           {videoItems.map((item) => (
             <div 
               key={item.id} 
-              className="relative group aspect-[9/16] cursor-pointer"
+              className="relative group h-[600px] rounded-2xl overflow-hidden cursor-pointer"
               onClick={() => handleVideoClick(item.id)}
             >
               {playingVideo === item.id ? (

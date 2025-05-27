@@ -2,8 +2,9 @@ import { NavLink, PortfolioItem, VideoItem, AudioItem, SocialLink } from '../typ
 import { Camera, Video, Music, Facebook, Instagram, Twitter, Youtube, Mail } from 'lucide-react';
 
 export const navLinks: NavLink[] = [
-  { name: 'Home', href: '#home' },
+  { name: 'Home', href: '/' },
   { name: 'About', href: '#about' },
+  { name: 'Our Work', href: '/our-work' },
   { name: 'Photography', href: '#photography' },
   { name: 'Video', href: '#video' },
   { name: 'Audio', href: '#audio' },
@@ -103,57 +104,39 @@ export const portfolioItems: PortfolioItem[] = [
 export const videoItems: VideoItem[] = [
   {
     id: 1,
-    title: 'Wedding Highlights',
-    thumbnailUrl: '/assets/images/about1.png',
-    videoUrl: 'https://videos.pexels.com/video-files/29620281/12746015_1080_1920_60fps.mp4', // Add this
+    title: "Ocvision x Eaca",
+    videoUrl: "/assets/videos/Sequence_01.mp4",
+    thumbnailUrl: "/assets/images/thumb_01.JPG"
   },
   {
     id: 2,
-    title: 'Corporate Brand Story',
-    thumbnailUrl: 'https://images.pexels.com/photos/3194523/pexels-photo-3194523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    videoUrl: 'https://videos.pexels.com/video-files/29620281/12746015_1080_1920_60fps.mp4', 
+    title: "GYM Shoot",
+    videoUrl: "/assets/videos/Sequence_02.mp4",
+    thumbnailUrl: "/assets/images/thumb_02.JPG"
   },
   {
     id: 3,
-    title: 'Music Video Production',
-    thumbnailUrl: 'https://images.pexels.com/photos/2425061/pexels-photo-2425061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    videoUrl: 'https://videos.pexels.com/video-files/29620281/12746015_1080_1920_60fps.mp4', 
+    title: "Ocvision x Otla",
+    videoUrl: "/assets/videos/otla_x_ocvision_03.mp4",
+    thumbnailUrl: "/assets/images/thumb_03.JPG"
   },
   {
     id: 4,
-    title: 'Short Documentary',
-    thumbnailUrl: 'https://images.pexels.com/photos/2876617/pexels-photo-2876617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    videoUrl: 'https://videos.pexels.com/video-files/29620281/12746015_1080_1920_60fps.mp4', 
+    title: "Numb By Jeone",
+    videoUrl: "/assets/videos/numb_04.mp4",
+    thumbnailUrl: "/assets/images/thumb_04.JPG"
   },
   {
     id: 5,
-    title: 'Travel Vlog Series',
-    thumbnailUrl: 'https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    videoUrl: 'https://videos.pexels.com/video-files/29620281/12746015_1080_1920_60fps.mp4', 
+    title: "Day of Cinematographer",
+    videoUrl: "/assets/videos/ocvision_bhs_05.mp4",
+    thumbnailUrl: "/assets/images/thumb_05.JPG"
   },
   {
     id: 6,
-    title: 'Product Commercial',
-    thumbnailUrl: 'https://images.pexels.com/photos/5427671/pexels-photo-5427671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    videoUrl: 'https://videos.pexels.com/video-files/29620281/12746015_1080_1920_60fps.mp4', 
-  },
-  {
-    id: 7,
-    title: 'Event Recap',
-    thumbnailUrl: 'https://images.pexels.com/photos/2608516/pexels-photo-2608516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    videoUrl: 'https://videos.pexels.com/video-files/29620281/12746015_1080_1920_60fps.mp4', 
-  },
-  {
-    id: 8,
-    title: 'Fashion Campaign',
-    thumbnailUrl: 'https://images.pexels.com/photos/3394347/pexels-photo-3394347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    videoUrl: 'https://videos.pexels.com/video-files/29620281/12746015_1080_1920_60fps.mp4', 
-  },
-  {
-    id: 9,
-    title: 'Real Estate Tour',
-    thumbnailUrl: 'https://images.pexels.com/photos/3214064/pexels-photo-3214064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    videoUrl: 'https://videos.pexels.com/video-files/29620281/12746015_1080_1920_60fps.mp4', 
+    title: "Ocvision Studio Shoot",
+    videoUrl: "/assets/videos/ocvision_recording_studio_06.mp4",
+    thumbnailUrl: "/assets/images/thumb_06.JPG"
   },
 ];
 

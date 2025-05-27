@@ -1,10 +1,13 @@
 import { useState, useEffect } from 'react';
 import { navLinks } from '../data/content';
 import { Menu, X } from 'lucide-react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -47,6 +50,35 @@ const Navbar = () => {
     };
   }, []);
 
+  const handleNavigation = (href) => {
+    if (href.startsWith('#')) {
+      // If we're not on the home page, navigate to home first
+      if (location.pathname !== '/') {
+        navigate('/');
+        // Wait for navigation to complete before scrolling
+        setTimeout(() => {
+          const element = document.getElementById(href.substring(1));
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 100);
+      } else {
+        // If we're already on home page, just scroll
+        const element = document.getElementById(href.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    } else {
+      // Handle regular route navigation
+      navigate(href);
+    }
+    setIsOpen(false);
+    // Reset overflow after navigation
+    document.documentElement.style.overflow = 'auto';
+    document.body.style.overflow = 'auto';
+  };
+
   return (
     <>
       <nav
@@ -55,21 +87,24 @@ const Navbar = () => {
         }`}
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <a href="#home" className="text-2xl font-bold z-50">
+          <button 
+            onClick={() => handleNavigation('/')} 
+            className="text-2xl font-bold z-50"
+          >
             <span className="text-white">OC</span>
             <span className="text-accent">VISION</span>
-          </a>
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-6">
             {navLinks.map((link) => (
-              <a
+              <button
                 key={link.name}
-                href={link.href}
+                onClick={() => handleNavigation(link.href)}
                 className="text-white hover:text-accent transition-colors duration-300"
               >
                 {link.name}
-              </a>
+              </button>
             ))}
           </div>
 
@@ -92,14 +127,13 @@ const Navbar = () => {
       >
         <div className="flex flex-col items-center justify-center h-full space-y-8">
           {navLinks.map((link) => (
-            <a
+            <button
               key={link.name}
-              href={link.href}
+              onClick={() => handleNavigation(link.href)}
               className="text-white text-3xl font-bold hover:text-accent transition-colors duration-300"
-              onClick={toggleMenu}
             >
               {link.name}
-            </a>
+            </button>
           ))}
         </div>
       </div>

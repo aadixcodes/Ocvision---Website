@@ -35,7 +35,7 @@ const PhotographySection: React.FC = () => {
         </div>
         
         <div className="text-center mt-12">
-          <a href="#contact" className="btn">
+          <a href="/our-work" className="btn">
             View More
           </a>
         </div>
