@@ -22,7 +22,7 @@ export interface AudioItem {
   id: number;
   title: string;
   coverArt: string;
-  audioUrl?: string;
+  audioUrl: string; // Add this
 }
 
 export interface SocialLink {

@@ -14,17 +14,17 @@ export const heroImages = [
   {
     id: 1,
     imageUrl: '/assets/images/work1.jpg',
-    alt: 'Wedding photography',
+    alt: 'Footwear Shoot',
   },
   {
     id: 2,
     imageUrl: '/assets/images/work4.jpg',
-    alt: 'Film production',
+    alt: 'Footwear Shoot',
   },
   {
     id: 3,
     imageUrl: '/assets/images/work2.jpg',
-    alt: 'Portrait session',
+    alt: 'Cosmetics Shoot',
   },
 ];
 
@@ -104,47 +104,56 @@ export const videoItems: VideoItem[] = [
   {
     id: 1,
     title: 'Wedding Highlights',
-    thumbnailUrl: 'https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    thumbnailUrl: '/assets/images/about1.png',
+    videoUrl: 'https://videos.pexels.com/video-files/29620281/12746015_1080_1920_60fps.mp4', // Add this
   },
   {
     id: 2,
     title: 'Corporate Brand Story',
     thumbnailUrl: 'https://images.pexels.com/photos/3194523/pexels-photo-3194523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    videoUrl: 'https://videos.pexels.com/video-files/29620281/12746015_1080_1920_60fps.mp4', 
   },
   {
     id: 3,
     title: 'Music Video Production',
     thumbnailUrl: 'https://images.pexels.com/photos/2425061/pexels-photo-2425061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    videoUrl: 'https://videos.pexels.com/video-files/29620281/12746015_1080_1920_60fps.mp4', 
   },
   {
     id: 4,
     title: 'Short Documentary',
     thumbnailUrl: 'https://images.pexels.com/photos/2876617/pexels-photo-2876617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    videoUrl: 'https://videos.pexels.com/video-files/29620281/12746015_1080_1920_60fps.mp4', 
   },
   {
     id: 5,
     title: 'Travel Vlog Series',
     thumbnailUrl: 'https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    videoUrl: 'https://videos.pexels.com/video-files/29620281/12746015_1080_1920_60fps.mp4', 
   },
   {
     id: 6,
     title: 'Product Commercial',
     thumbnailUrl: 'https://images.pexels.com/photos/5427671/pexels-photo-5427671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    videoUrl: 'https://videos.pexels.com/video-files/29620281/12746015_1080_1920_60fps.mp4', 
   },
   {
     id: 7,
     title: 'Event Recap',
     thumbnailUrl: 'https://images.pexels.com/photos/2608516/pexels-photo-2608516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    videoUrl: 'https://videos.pexels.com/video-files/29620281/12746015_1080_1920_60fps.mp4', 
   },
   {
     id: 8,
     title: 'Fashion Campaign',
     thumbnailUrl: 'https://images.pexels.com/photos/3394347/pexels-photo-3394347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    videoUrl: 'https://videos.pexels.com/video-files/29620281/12746015_1080_1920_60fps.mp4', 
   },
   {
     id: 9,
     title: 'Real Estate Tour',
     thumbnailUrl: 'https://images.pexels.com/photos/3214064/pexels-photo-3214064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    videoUrl: 'https://videos.pexels.com/video-files/29620281/12746015_1080_1920_60fps.mp4', 
   },
 ];
 
@@ -153,16 +162,19 @@ export const audioItems: AudioItem[] = [
     id: 1,
     title: 'Commercial Soundtracks',
     coverArt: 'https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    audioUrl: '/assets/audios/sound.mp3', // Add this
   },
   {
     id: 2,
     title: 'Podcast Production',
     coverArt: 'https://images.pexels.com/photos/2097428/pexels-photo-2097428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    audioUrl: '/assets/audios/sound.mp3',
   },
   {
     id: 3,
     title: 'Voice-Over Services',
     coverArt: 'https://images.pexels.com/photos/682082/pexels-photo-682082.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    audioUrl: '/assets/audios/sound.mp3',
   },
 ];
 
