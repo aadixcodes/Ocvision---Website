@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-montserrat text-white bg-dark overflow-x-hidden;
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.container-padding {
+  @apply px-4 md:px-8 lg:px-16;
+}
+
+.yellow-underline {
+  @apply relative inline-block;
+}
+
+.yellow-underline::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-full h-[3px] bg-accent;
+}
+
+.portfolio-item {
+  @apply relative overflow-hidden transition duration-500 ease-in-out;
+}
+
+.portfolio-item:hover img {
+  @apply scale-105 brightness-110;
+}
+
+.portfolio-overlay {
+  @apply absolute top-0 left-0 w-full h-full bg-dark/50 opacity-0 transition-opacity duration-500 flex items-center justify-center;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  @apply opacity-100;
+}
+
+.image-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4;
+}
+
+.video-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.audio-grid {
+  @apply flex flex-col md:flex-row justify-around items-center gap-8;
+}
+
+.btn {
+  @apply px-6 py-3 bg-accent text-dark font-semibold transition-transform duration-300 inline-block text-center;
+}
+
+.btn:hover {
+  @apply transform scale-105;
+}
+
+.glass-effect {
+  @apply bg-dark-gray/80 backdrop-blur-sm;
+}
+
+@keyframes wave {
+  0% { transform: scaleY(0.1); }
+  50% { transform: scaleY(1); }
+  100% { transform: scaleY(0.1); }
+}
+
+.wave-bar {
+  animation: wave 1.5s ease-in-out infinite;
+}
+
+.wave-container .wave-bar:nth-child(1) { animation-delay: 0s; }
+.wave-container .wave-bar:nth-child(2) { animation-delay: 0.1s; }
+.wave-container .wave-bar:nth-child(3) { animation-delay: 0.2s; }
+.wave-container .wave-bar:nth-child(4) { animation-delay: 0.3s; }
+.wave-container .wave-bar:nth-child(5) { animation-delay: 0.4s; }
+.wave-container .wave-bar:nth-child(6) { animation-delay: 0.5s; }
