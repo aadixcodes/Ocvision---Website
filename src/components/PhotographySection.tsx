@@ -1,7 +1,16 @@
 import React from 'react';
 import { portfolioItems } from '../data/content';
+import { useNavigate } from 'react-router-dom';
 
 const PhotographySection: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleViewMore = () => {
+    // Reset scroll position before navigation
+    window.scrollTo(0, 0);
+    navigate('/our-work');
+  };
+
   return (
     <section id="photography" className="bg-dark-gray section-padding">
       <div className="container mx-auto container-padding">
@@ -35,9 +44,12 @@ const PhotographySection: React.FC = () => {
         </div>
         
         <div className="text-center mt-12">
-          <a href="/our-work" className="btn">
+          <button 
+            onClick={handleViewMore}
+            className="btn"
+          >
             View More
-          </a>
+          </button>
         </div>
       </div>
     </section>
