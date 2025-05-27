@@ -71,6 +71,8 @@ const Navbar = () => {
       }
     } else {
       // Handle regular route navigation
+      // Reset scroll position before navigation
+      window.scrollTo(0, 0);
       navigate(href);
     }
     setIsOpen(false);
