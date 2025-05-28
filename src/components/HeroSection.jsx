@@ -88,7 +88,7 @@ const HeroSection = () => {
         {/* Logo - Replace with your actual logo image */}
         <div className="mb-6 animate-fade-in">
           <img 
-            src="/assets/logos/ocvision_logo1.png" 
+            src="/assets/logos2/ocvision_logo.png" 
             alt="OCVISION" 
             className="mx-auto w-full max-w-md md:max-w-lg lg:max-w-xl xl:max-w-3xl"
           />

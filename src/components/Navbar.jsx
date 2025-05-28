@@ -89,13 +89,16 @@ const Navbar = () => {
         }`}
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <button 
-            onClick={() => handleNavigation('/')} 
-            className="text-2xl font-bold z-50"
-          >
-            <span className="text-white">OC</span>
-            <span className="text-accent">VISION</span>
-          </button>
+        <button
+  onClick={() => handleNavigation('/')}
+  className="z-50"
+>
+  <img
+    src="/assets/logos2/ocvision_logo.png"
+    alt="OCVision Logo"
+    className="h-10 md:h-12 w-auto object-contain"
+  />
+</button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-6">
