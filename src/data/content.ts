@@ -48,7 +48,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Sneakers Shoot',
     category: 'Footwear',
     imageUrl: '/assets/images/work1.jpg',
-    isLandscape: true,
+    isLandscape: true,  
   },
   {
     id: 2,
@@ -80,23 +80,23 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 6,
-    title: 'Grey Hiking Boots',
-    category: 'Footwear',
-    imageUrl: '/assets/images/work6.jpg',
+    title: 'Fashion Photography',
+    category: 'Model',
+    imageUrl: '/assets/images/work11.jpg',
     isLandscape: true,
   },
   {
     id: 7,
-    title: 'Compact Powder Collection',
-    category: 'Cosmetics',
-    imageUrl: '/assets/images/work7.jpg',
+    title: 'Fashion Photography',
+    category: 'Model',
+    imageUrl: '/assets/images/work13.JPG',
     isLandscape: true,
   },
   {
     id: 8,
-    title: ' Classic Red and Black Sneakers',
-    category: 'Footwear',
-    imageUrl: '/assets/images/work8.jpg',
+    title: 'Fashion Photography',
+    category: 'Cap',
+    imageUrl: '/assets/images/work12.jpeg',
     isLandscape: true,
   },
 ];
@@ -218,5 +218,38 @@ export const contactImages = [
     id: 2,
     imageUrl: '/assets/images/work3.png',
     alt: 'Camera',
+  },
+];
+
+export const brandLogos = [
+  {
+    id: 1,
+    name: "Brand 1",
+    logoUrl: "/assets/logos2/logo1.png",
+  },
+  {
+    id: 2,
+    name: "Brand 2",
+    logoUrl: "/assets/logos2/logo2.png",
+  },
+  {
+    id: 3,
+    name: "Brand 3",
+    logoUrl: "/assets/logos2/logo4.png",
+  },
+  {
+    id: 4,
+    name: "Brand 4",
+    logoUrl: "/assets/logos2/logo3.png",
+  },
+  {
+    id: 5,
+    name: "Brand 5",
+    logoUrl: "/assets/logos2/logo5.png",
+  },
+  {
+    id: 6,
+    name: "Brand 5",
+    logoUrl: "/assets/logos2/logo6.png",
   },
 ];

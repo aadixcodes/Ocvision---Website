@@ -9,12 +9,14 @@ import AudioSection from './components/AudioSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import OurWork from './pages/OurWork';
+import Collab from './components/Collabs';
 
 function Home() {
   return (
     <>
       <HeroSection />
       <AboutSection />
+      <Collab />
       <PhotographySection />
       <VideoSection />
       <AudioSection />
