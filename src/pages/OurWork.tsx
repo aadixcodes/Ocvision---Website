@@ -214,54 +214,67 @@ const creativeDisciplines = [
   }  
 ];
 
+
+// Videos 
 const featuredProjects = [
+  {
+    id: 8,
+    title: "Summer Campaign",
+    videoUrl: "https://res.cloudinary.com/dbutuibtl/video/upload/v1749877779/otla_new_08_fabdd1.mp4",
+    thumbnail: "/assets/images/thumb_08.JPG"
+  },
+  {
+    id: 9,
+    title: "Summer Campaign",
+    videoUrl: "https://res.cloudinary.com/dbutuibtl/video/upload/v1749877811/Dazzzlin_09_tbpbeg.mp4",
+    thumbnail: "/assets/images/thumb_09.JPG"
+  },
+  {
+    id: 10,
+    title: "Summer Campaign",
+    videoUrl: "https://res.cloudinary.com/dbutuibtl/video/upload/v1749877674/another_women_10_jxpmn8.mp4",
+    thumbnail: "/assets/images/thumb_10.JPG"
+  },
   {
     id: 1,
     title: "Summer Campaign",
-    description: "Outdoor lifestyle series for sportswear brand",
-    videoUrl: "/assets/videos/Sequence_01.mp4",
+    videoUrl: "https://res.cloudinary.com/dbutuibtl/video/upload/v1749877932/Sequence_01_hvakn8.mp4",
     thumbnail: "/assets/images/thumb_01.JPG"
   },
   {
     id: 2,
     title: "Product Launch",
-    description: "Cinematic product showcase video",
-    videoUrl: "/assets/videos/Sequence_02.mp4",
+    videoUrl: "https://res.cloudinary.com/dbutuibtl/video/upload/v1749877967/Sequence_02_whz5wg.mp4",
     thumbnail: "/assets/images/thumb_02.JPG"
   },
   {
     id: 3,
     title: "Brand Story",
-    description: "Documentary style brand narrative",
-    videoUrl: "/assets/videos/otla_x_ocvision_03.mp4",
+    videoUrl: "https://res.cloudinary.com/dbutuibtl/video/upload/v1749877961/otla_x_ocvision_03_ljefuc.mp4",
     thumbnail: "/assets/images/thumb_03.JPG"
   },
   {
     id: 4,
     title: "Brand Story",
-    description: "Documentary style brand narrative",
-    videoUrl: "/assets/videos/numb_04.mp4",
+    videoUrl: "https://res.cloudinary.com/dbutuibtl/video/upload/v1749877992/numb_04_sqpefa.mp4",
     thumbnail: "/assets/images/thumb_04.JPG"
   },
   {
     id: 5,
     title: "Brand Story",
-    description: "Documentary style brand narrative",
-    videoUrl: "/assets/videos/ocvision_bhs_05.mp4",
+    videoUrl: "https://res.cloudinary.com/dbutuibtl/video/upload/v1749877933/ocvision_bhs_05_occoij.mp4",
     thumbnail: "/assets/images/thumb_05.JPG"
   },
   {
     id: 6,
     title: "Brand Story",
-    description: "Documentary style brand narrative",
-    videoUrl: "/assets/videos/ocvision_recording_studio_06.mp4",
+    videoUrl: "https://res.cloudinary.com/dbutuibtl/video/upload/v1749877923/ocvision_recording_studio_06_tyoumf.mp4",
     thumbnail: "/assets/images/thumb_06.JPG"
   },
   {
     id: 7,
     title: "Brand Story",
-    description: "Documentary style brand narrative",
-    videoUrl: "/assets/videos/cine_oc_vision_07.mp4",
+    videoUrl: "https://res.cloudinary.com/dbutuibtl/video/upload/v1749877966/cine_oc_vision_07_mr0v6l.mp4",
     thumbnail: "/assets/images/thumb_07.JPG"
   },
 ];

@@ -103,41 +103,59 @@ export const portfolioItems: PortfolioItem[] = [
 
 export const videoItems: VideoItem[] = [
   {
+    id: 4,
+    title: "Otla x Ocvision",
+    videoUrl: "https://res.cloudinary.com/dbutuibtl/video/upload/v1749877779/otla_new_08_fabdd1.mp4",
+    thumbnailUrl: "/assets/images/thumb_08.JPG"
+  },
+  {
+    id: 5,
+    title: "Dazzlin x Ocvision",
+    videoUrl: "https://res.cloudinary.com/dbutuibtl/video/upload/v1749877811/Dazzzlin_09_tbpbeg.mp4",
+    thumbnailUrl: "/assets/images/thumb_09.JPG"
+  },
+  {
+    id: 6,
+    title: "Otla x Ocvision",
+    videoUrl: "https://res.cloudinary.com/dbutuibtl/video/upload/v1749877674/another_women_10_jxpmn8.mp4",
+    thumbnailUrl: "/assets/images/thumb_10.JPG"
+  },
+  {
     id: 1,
     title: "Ocvision x Eaca",
-    videoUrl: "/assets/videos/Sequence_01.mp4",
+    videoUrl: "https://res.cloudinary.com/dbutuibtl/video/upload/v1749877932/Sequence_01_hvakn8.mp4",
     thumbnailUrl: "/assets/images/thumb_01.JPG"
   },
   {
     id: 2,
     title: "GYM Shoot",
-    videoUrl: "/assets/videos/Sequence_02.mp4",
+    videoUrl: "https://res.cloudinary.com/dbutuibtl/video/upload/v1749877967/Sequence_02_whz5wg.mp4",
     thumbnailUrl: "/assets/images/thumb_02.JPG"
   },
   {
     id: 3,
     title: "Ocvision x Otla",
-    videoUrl: "/assets/videos/otla_x_ocvision_03.mp4",
+    videoUrl: "https://res.cloudinary.com/dbutuibtl/video/upload/v1749877961/otla_x_ocvision_03_ljefuc.mp4",
     thumbnailUrl: "/assets/images/thumb_03.JPG"
   },
-  {
-    id: 4,
-    title: "Numb By Jeone",
-    videoUrl: "/assets/videos/numb_04.mp4",
-    thumbnailUrl: "/assets/images/thumb_04.JPG"
-  },
-  {
-    id: 5,
-    title: "Day of Cinematographer",
-    videoUrl: "/assets/videos/ocvision_bhs_05.mp4",
-    thumbnailUrl: "/assets/images/thumb_05.JPG"
-  },
-  {
-    id: 6,
-    title: "Ocvision Studio Shoot",
-    videoUrl: "/assets/videos/ocvision_recording_studio_06.mp4",
-    thumbnailUrl: "/assets/images/thumb_06.JPG"
-  },
+  // {
+  //   id: 4,
+  //   title: "Numb By Jeone",
+  //   videoUrl: "/assets/videos/numb_04.mp4",
+  //   thumbnailUrl: "/assets/images/thumb_04.JPG"
+  // },
+  // {
+  //   id: 5,
+  //   title: "Day of Cinematographer",
+  //   videoUrl: "/assets/videos/ocvision_bhs_05.mp4",
+  //   thumbnailUrl: "/assets/images/thumb_05.JPG"
+  // },
+  // {
+  //   id: 6,
+  //   title: "Ocvision Studio Shoot",
+  //   videoUrl: "/assets/videos/ocvision_recording_studio_06.mp4",
+  //   thumbnailUrl: "/assets/images/thumb_06.JPG"
+  // },
 ];
 
 export const audioItems: AudioItem[] = [
@@ -162,31 +180,26 @@ export const audioItems: AudioItem[] = [
 ];
 
 export const contactInfo = {
-  phone: '+1 (555) 123-4567',
-  email: 'info@ocvision.com',
-  address: '123 Creative Studio St, New York, NY 10001',
+  phone: '+91 8109941748, +91 9407072203',
+  email: 'theocvisionagency@gmail.com',
+  address: 'Kushwah nagar, near Sundaram public school, banganga,indore',
 };
 
 export const socialLinks: SocialLink[] = [
   {
-    platform: 'Facebook',
-    url: 'https://facebook.com',
-    icon: 'Facebook',
+    platform: 'WhatsApp',
+    url: 'https://wa.me/918109941748',
+    icon: 'Whatsapp',
   },
   {
     platform: 'Instagram',
-    url: 'https://instagram.com',
+    url: 'https://www.instagram.com/theocvision?igsh=Znk1eGgxOXpkanU2',
     icon: 'Instagram',
   },
   {
-    platform: 'Twitter',
-    url: 'https://twitter.com',
-    icon: 'Twitter',
-  },
-  {
-    platform: 'YouTube',
-    url: 'https://youtube.com',
-    icon: 'Youtube',
+    platform: 'Mail',
+    url: 'mailto:theocvisionagency@gmail.com',
+    icon: 'Mail',
   },
 ];
 
@@ -241,6 +254,11 @@ export const brandLogos = [
     id: 4,
     name: "Brand 4",
     logoUrl: "/assets/logos2/logo3.png",
+  },
+  {
+    id: 6,
+    name: "Brand 6",
+    logoUrl: "/assets/logos2/logo8.png",
   },
   {
     id: 5,

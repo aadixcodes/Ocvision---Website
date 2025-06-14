@@ -63,7 +63,7 @@ const HeroSection = () => {
           playsInline
           className="hidden md:block w-full h-full object-cover"
         >
-          <source src="/assets/videos/hero_banner_vid.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dbutuibtl/video/upload/v1749884079/hero_video_etsmik.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         
@@ -75,7 +75,7 @@ const HeroSection = () => {
           playsInline
           className="md:hidden w-full h-full object-cover"
         >
-          <source src="/assets/videos/hero_banner_vid_m.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dbutuibtl/video/upload/v1749884324/hero_mobile_m8vq9g.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         
