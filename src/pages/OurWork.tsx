@@ -786,8 +786,8 @@ const OurWork = () => {
           </button>
         </div>
 
-        {/* Photography Content */}
-        {activeTab === 'photography' && (
+         {/* Photography Content */}
+         {activeTab === 'photography' && (
           <div>
             {/* Category Buttons */}
             <div className="flex flex-wrap justify-center gap-3 mb-12">
@@ -810,51 +810,65 @@ const OurWork = () => {
             </div>
 
             {/* Image Grid */}
-            <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
-              {photographyCategories[activeCategory as keyof typeof photographyCategories]
-                .slice(0, visibleImages)
-                .map((item) => (
-                  <motion.div 
-                    key={item.id}
-                    whileHover={{ scale: 1.02 }}
-                    className="relative group rounded-xl overflow-hidden break-inside-avoid"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    <div className="relative w-full">
-                      {/* Low-quality placeholder */}
-                      {!loadedImages[item.id.toString()] && (
-                        <div className={`${getAspectRatioClass(item.image)} bg-gray-800 animate-pulse`}></div>
-                      )}
-                      
-                      {/* Lazy-loaded high-quality image */}
-                      <img 
-                        src={item.image} 
-                        alt=""
-                        className={`w-full rounded-xl object-cover transition-all duration-500 group-hover:brightness-110 ${
-                          loadedImages[item.id.toString()] ? 'opacity-100' : 'opacity-0 absolute'
-                        } ${getAspectRatioClass(item.image)}`}
-                        loading="lazy"
-                        onLoad={() => handleImageLoad(item.id.toString())}
-                      />
-                    </div>
-                  </motion.div>
-                ))}
-            </div>
+            {photographyCategories[activeCategory as keyof typeof photographyCategories].length > 0 ? (
+              <>
+                <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+                  {photographyCategories[activeCategory as keyof typeof photographyCategories]
+                    .slice(0, visibleImages)
+                    .map((item) => (
+                      <motion.div 
+                        key={item.id}
+                        whileHover={{ scale: 1.02 }}
+                        className="relative group rounded-xl overflow-hidden break-inside-avoid"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.5 }}
+                      >
+                        <div className="relative w-full">
+                          {/* Low-quality placeholder */}
+                          {!loadedImages[item.id.toString()] && (
+                            <div className={`${getAspectRatioClass(item.image)} bg-gray-800 animate-pulse`}></div>
+                          )}
+                          
+                          {/* Lazy-loaded high-quality image */}
+                          <img 
+                            src={item.image} 
+                            alt=""
+                            className={`w-full rounded-xl object-cover transition-all duration-500 group-hover:brightness-110 ${
+                              loadedImages[item.id.toString()] ? 'opacity-100' : 'opacity-0 absolute'
+                            } ${getAspectRatioClass(item.image)}`}
+                            loading="lazy"
+                            onLoad={() => handleImageLoad(item.id.toString())}
+                          />
+                        </div>
+                      </motion.div>
+                    ))}
+                </div>
 
-            {visibleImages < photographyCategories[activeCategory as keyof typeof photographyCategories].length && (
-              <div className="text-center mt-12">
-                <button 
-                  onClick={loadMoreImages}
-                  className="btn btn-accent px-8 py-3 rounded-full text-lg font-medium"
-                >
-                  Load More
-                </button>
+                {visibleImages < photographyCategories[activeCategory as keyof typeof photographyCategories].length && (
+                  <div className="text-center mt-12">
+                    <button 
+                      onClick={loadMoreImages}
+                      className="btn btn-accent px-8 py-3 rounded-full text-lg font-medium"
+                    >
+                      Load More
+                    </button>
+                  </div>
+                )}
+              </>
+            ) : (
+              <div className="text-center py-20">
+                <div className="max-w-2xl mx-auto">
+                  <h3 className="text-2xl font-medium mb-4">No images available for this category</h3>
+                  <p className="text-gray-400">
+                    We're currently working on adding content for this category. Please check back later or explore our other categories.
+                  </p>
+                </div>
               </div>
             )}
           </div>
         )}
+
 
         {/* Videography Content - Kept exactly the same as original */}
         {activeTab === 'videography' && (
