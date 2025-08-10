@@ -138,24 +138,6 @@ export const videoItems: VideoItem[] = [
     videoUrl: "https://res.cloudinary.com/dbutuibtl/video/upload/v1749877961/otla_x_ocvision_03_ljefuc.mp4",
     thumbnailUrl: "/assets/images/thumb_03.JPG"
   },
-  // {
-  //   id: 4,
-  //   title: "Numb By Jeone",
-  //   videoUrl: "/assets/videos/numb_04.mp4",
-  //   thumbnailUrl: "/assets/images/thumb_04.JPG"
-  // },
-  // {
-  //   id: 5,
-  //   title: "Day of Cinematographer",
-  //   videoUrl: "/assets/videos/ocvision_bhs_05.mp4",
-  //   thumbnailUrl: "/assets/images/thumb_05.JPG"
-  // },
-  // {
-  //   id: 6,
-  //   title: "Ocvision Studio Shoot",
-  //   videoUrl: "/assets/videos/ocvision_recording_studio_06.mp4",
-  //   thumbnailUrl: "/assets/images/thumb_06.JPG"
-  // },
 ];
 
 export const audioItems: AudioItem[] = [
